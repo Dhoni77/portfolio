@@ -4,7 +4,11 @@ export default {
   content: ["./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",],
   theme: {
-    extend: {},
+    extend: {
+      screens: {
+        'lg-max': '1170px'
+      },
+    },
   },
   plugins: [
     plugin(function ({ matchUtilities, theme }) {
